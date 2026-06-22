@@ -203,10 +203,12 @@ Hasil pengujian menunjukkan fitur utama aplikasi dapat berjalan dengan baik.
 [Link Prototype Figma](https://www.figma.com/proto/Jz7uWSTSQy9o21InlPwSsQ/MyLibrary?node-id=82-262&p=f&t=4ZORrOjSDNwFyj96-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=8%3A3&show-proto-sidebar=1)
 
 📋 **ClickUp Timeline**  
-https://link-clickup
+[Link Clickup Timeline Board](https://sharing.clickup.com/90181792553/b/h/2kzm1wt9-378/a0cb499ec9711c0)
+
+[Link ClickUp Timeline Gantt](https://sharing.clickup.com/90181792553/g/h/2kzm1wt9-458/87d0d18ec0b1193)
 
 📱 **Demo Aplikasi YouTube**  
-https://link-youtube
+[Link Dome Aplikasi YouTube](https://sharing.clickup.com/90181792553/g/h/2kzm1wt9-458/87d0d18ec0b1193)
 
 ---
 
