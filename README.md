@@ -197,10 +197,10 @@ Hasil pengujian menunjukkan fitur utama aplikasi dapat berjalan dengan baik.
 # 🔗 Project Links
 
 🎨 **Figma Design**  
-https://link-figma
+[Link Figma Design](https://www.figma.com/design/Jz7uWSTSQy9o21InlPwSsQ/MyLibrary?node-id=0-1&t=awuUnKtU2Upu68Sm-1)
 
 🎥 **Video Prototype Figma**  
-https://link-video-figma
+[Link Prototype Figma](https://www.figma.com/proto/Jz7uWSTSQy9o21InlPwSsQ/MyLibrary?node-id=82-262&p=f&t=4ZORrOjSDNwFyj96-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=8%3A3&show-proto-sidebar=1)
 
 📋 **ClickUp Timeline**  
 https://link-clickup
