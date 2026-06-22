@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme -->
+    <style name="Base.Theme.MyLibrary" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- WARNA APP -->
+        <item name="colorPrimary">#1976D2</item>
+        <item name="colorPrimaryVariant">#1565C0</item>
+
+        <!-- STATUS BAR -->
+        <item name="android:statusBarColor">#1976D2</item>
+
+        <!-- NAVIGATION BAR -->
+        <item name="android:navigationBarColor">#1976D2</item>
+
+        <!-- ICON STATUS BAR PUTIH -->
+        <item name="android:windowLightStatusBar">false</item>
+
+    </style>
+
+    <style name="Theme.MyLibrary" parent="Base.Theme.MyLibrary" />
+
+</resources>

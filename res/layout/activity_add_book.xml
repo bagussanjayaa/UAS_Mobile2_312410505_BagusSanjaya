@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_mylibrary">
+
+    <!-- HEADER -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="#1976D2"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"
+            app:tint="@android:color/white"/>
+
+        <TextView
+            android:text="Tambah Buku"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/headerSave"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cek"
+            app:tint="@android:color/white"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- COVER -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="3dp"
+                app:cardBackgroundColor="@android:color/white">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgCover"
+                        android:layout_width="90dp"
+                        android:layout_height="130dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/book"
+                        android:background="#E3F2FD"/>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginStart="14dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Cover Buku"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="#111111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:text="Upload cover dari galeri"
+                            android:textSize="13sp"
+                            android:textColor="#777777"
+                            android:layout_marginTop="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <Button
+                            android:id="@+id/btnPickImage"
+                            android:text="Pilih Gambar"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            android:layout_marginTop="12dp"
+                            android:backgroundTint="#1976D2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- INPUT -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@android:color/white">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/etTitle"
+                        android:hint="Judul Buku"
+                        android:textColorHint="@color/gray"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="#111111"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#EEEEEE"/>
+
+                    <EditText
+                        android:id="@+id/etAuthor"
+                        android:hint="Nama Penulis"
+                        android:textColorHint="@color/gray"
+                        android:textColor="#333333"
+                        android:background="@null"
+                        android:layout_marginTop="6dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- GENRE + PAGE -->
+            <!-- GENRE + PAGE -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginBottom="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- GENRE -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Genre"
+                        android:textSize="13sp"
+                        android:textColor="#666666"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="16dp"
+                        app:cardBackgroundColor="#F7F9FC">
+
+                        <EditText
+                            android:id="@+id/etGenre"
+                            android:hint="Contoh: Fiksi"
+                            android:textColorHint="@color/gray"
+                            android:padding="14dp"
+                            android:textColor="#222222"
+                            android:background="@null"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="1dp"/>
+
+                <!-- HALAMAN -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Jumlah Halaman"
+                        android:textSize="13sp"
+                        android:textColor="#666666"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="16dp"
+                        app:cardBackgroundColor="#F7F9FC">
+
+                        <EditText
+                            android:id="@+id/etPages"
+                            android:hint="Contoh: 230"
+                            android:textColorHint="@color/gray"
+                            android:inputType="number"
+                            android:padding="14dp"
+                            android:textColor="#222222"
+                            android:background="@null"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- FILE PDF -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                app:cardCornerRadius="18dp"
+                app:cardBackgroundColor="@android:color/white">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="14dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Upload E-Book (PDF)"
+                        android:textStyle="bold"
+                        android:textColor="#111111"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/btnPickPdf"
+                        android:text="Pilih File"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:backgroundTint="#43A047"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- STATUS -->
+            <TextView
+                android:text="Status Membaca"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#111111"
+                android:layout_marginBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnBelum"
+                    android:text="Belum"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="1"
+                    android:backgroundTint="#EF5350"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"/>
+
+                <Space android:layout_width="8dp" android:layout_height="1dp"/>
+
+                <Button
+                    android:id="@+id/btnSedang"
+                    android:text="Sedang"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FB8C00"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"/>
+
+                <Space android:layout_width="8dp" android:layout_height="1dp"/>
+
+                <Button
+                    android:id="@+id/btnSelesai"
+                    android:text="Selesai"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="1"
+                    android:backgroundTint="#43A047"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"/>
+            </LinearLayout>
+
+            <!-- NOTE -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="18dp"
+                app:cardBackgroundColor="@android:color/white">
+
+                <EditText
+                    android:id="@+id/etNote"
+                    android:hint="Catatan / Review buku..."
+                    android:textColorHint="@color/gray"
+                    android:minHeight="120dp"
+                    android:gravity="top"
+                    android:textColor="#222222"
+                    android:padding="14dp"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
