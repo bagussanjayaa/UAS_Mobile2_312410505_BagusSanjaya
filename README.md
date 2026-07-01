@@ -208,7 +208,7 @@ Hasil pengujian menunjukkan fitur utama aplikasi dapat berjalan dengan baik.
 [Link ClickUp Timeline Gantt](https://sharing.clickup.com/90181792553/g/h/2kzm1wt9-458/87d0d18ec0b1193)
 
 📱 **Demo Aplikasi YouTube**  
-[Link Dome Aplikasi YouTube](https://sharing.clickup.com/90181792553/g/h/2kzm1wt9-458/87d0d18ec0b1193)
+[Link Dome Aplikasi YouTube](https://youtube.com/shorts/4UjX8IyLl10?si=Ma8ZDvz06WFUAbyB)
 
 ---
 
